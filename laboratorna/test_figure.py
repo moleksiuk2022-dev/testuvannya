@@ -1,6 +1,6 @@
 import unittest
 from random import choice, randint
-from app import Figure  # якщо твій клас у app.py
+from app import Figure  
 
 class TestFigure(unittest.TestCase):
 
@@ -24,7 +24,7 @@ class TestFigure(unittest.TestCase):
 
     def test_invalid_object(self):
         with self.assertRaises(AssertionError):
-            Figure("circle", 1)  # недозволена фігура
+            Figure("circle", 1) 
 
 if __name__ == '__main__':
     unittest.main()
